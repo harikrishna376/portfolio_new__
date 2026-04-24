@@ -3,140 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhupathi Hari Krishna - Portfolio</title>
+    <title>Bhupathi Hari Krishna | AI & ML Engineer</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
-        <h1>BHK.</h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-        </ul>
+        <div class="nav-container">
+            <h1>BHK<span>.</span>AI</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
     </nav>
 
     <section id="home">
-        <h1>Bhupathi Hari Krishna</h1>
-        <p class="subtitle">Machine Learning Engineer with hands-on experience in Generative AI, LLMs, and RAG pipelines.</p>
-        <p>Based in Srikakulam, India | Proven ability to design, build, and deploy end-to-end ML systems with measurable impact.</p>
-        <br>
-        <div class="social-links">
-            <a href="https://github.com/harikrishna376" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/hari-krishna-bhupathi-a29a88273/" target="_blank">LinkedIn</a>
-        </div>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline-item">
-            <h3>Technical Training Intern | TopNotch Softsol, Hyderabad</h3>
-            <p><strong>Dec 2024 - Apr 2025</strong></p>
-            <ul>
-                <li>Engineered a full-stack Hospital Management System using .NET, handling patient data and workflow automation.</li>
-                <li>Applied Software Development Life Cycle (SDLC) principles to design scalable and maintainable modules.</li>
-                <li>Built backend logic and improved system efficiency through optimized data handling and processing.</li>
-            </ul>
+        <div class="hero">
+            <span class="badge">Machine Learning Engineer</span>
+            <h1>Bhupathi Hari Krishna</h1>
+            <p class="subtitle">Specializing in <strong>Generative AI</strong>, <strong>LLMs</strong>, and <strong>RAG Pipelines</strong>[cite: 6]. Building end-to-end ML systems with measurable business impact[cite: 7].</p>
+            <div class="cta-group">
+                <a href="https://www.linkedin.com/in/hari-krishna-bhupathi-a29a88273/" class="btn-primary" target="_blank">LinkedIn</a>
+                <a href="https://github.com/harikrishna376" class="btn-secondary" target="_blank">GitHub</a>
+            </div>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Engineering Projects</h2>
         <div class="projects-grid">
-            
             <div class="project-card">
-                <h3>Market Mood AI (Sentinel V2)</h3>
-                <p class="tech-stack">Python, NLP, Streamlit, BeautifulSoup, TextBlob</p>
-                <p>Developed real-time sentiment analysis system processing 200+ financial articles per session. Automated end-to-end data pipeline, reducing manual analysis effort by 80%. Generated actionable trading signals using NLP-based sentiment scoring.</p>
-                <div class="project-links">
-                    <a href="https://ai-market-sentinel-v2-hv58xxeqde9lngqjwxs9ed.streamlit.app/" target="_blank">Live Demo</a>
+                <div class="card-header">
+                    <h3>Market Mood AI</h3>
+                    <span class="tag">NLP</span>
                 </div>
+                <p>Real-time sentiment system processing 200+ financial articles per session[cite: 19]. Automated pipelines reducing manual effort by 80%[cite: 20].</p>
+                <div class="tech-stack">Python, BeautifulSoup, TextBlob [cite: 17]</div>
+                <a href="https://ai-market-sentinel-v2-hv58xxeqde9lngqjwxs9ed.streamlit.app/" class="btn-link" target="_blank">View Live Demo →</a>
             </div>
 
             <div class="project-card">
-                <h3>Smart Mirror: Virtual Try-On</h3>
-                <p class="tech-stack">PyTorch, GANs, Computer Vision, OpenCV</p>
-                <p>Built GAN-based real-time virtual try-on system with multi-angle rendering. Improved visual realism by 35% through optimized image processing pipelines. Published research paper in IJARSCT (Impact Factor: 7.53).</p>
-                <div class="project-links">
-                    <a href="https://ai-virtual-tryon-engine.streamlit.app/" target="_blank">Live Demo</a>
+                <div class="card-header">
+                    <h3>Smart Mirror Engine</h3>
+                    <span class="tag">CV</span>
                 </div>
+                <p>GAN-based virtual try-on system with multi-angle rendering[cite: 25]. Improved visual realism by 35% via optimized image pipelines[cite: 25].</p>
+                <div class="tech-stack">PyTorch, GANs, OpenCV [cite: 23]</div>
+                <a href="https://ai-virtual-tryon-engine.streamlit.app/" class="btn-link" target="_blank">View Live Demo →</a>
             </div>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <h3>Clean-with-Hari</h3>
-                <p class="tech-stack">Flask, Scikit-learn, REST APIs</p>
-                <p>Developed data preprocessing tool reducing dataset cleaning time by 60%.</p>
-                <div class="project-links">
-                    <a href="https://clean-with-hari.streamlit.app/" target="_blank">Live Demo</a>
-                </div>
+    <section id="research">
+        <div class="research-container">
+            <div class="research-header">
+                <h2>Research & Publications</h2>
+                <span class="impact-factor">Impact Factor: 7.53</span>
             </div>
-
-            <div class="project-card">
-                <h3>Dog vs Cat Classifier</h3>
-                <p class="tech-stack">Flask, Scikit-learn, REST APIs</p>
-                <p>Built image classification model achieving 94% accuracy and deployed via REST API.</p>
-                <div class="project-links">
-                    <a href="https://dogvscat-cx.streamlit.app/" target="_blank">Live Demo</a>
-                </div>
+            <div class="research-card">
+                <h3>Virtual Try-On System using Generative Adversarial Networks</h3>
+                <p class="journal">Published in International Journal of Advanced Research in Science, Communication and Technology (IJARSCT).</p>
+                <p class="abstract">Developed a novel architecture for real-time garment transfer and realistic multi-angle visualization using deep generative models[cite: 25, 26].</p>
+                <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/public/MAIN_PROJECT_PUBLICATION.pdf" class="btn-primary" target="_blank">Read Research Paper</a>
             </div>
-
         </div>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-tag">Generative AI</div>
-            <div class="skill-tag">LLMs</div>
-            <div class="skill-tag">RAG Pipelines</div>
-            <div class="skill-tag">NLP</div>
-            <div class="skill-tag">Deep Learning</div>
-            <div class="skill-tag">GANs</div>
-            <div class="skill-tag">Computer Vision</div>
-            
-            <div class="skill-tag">PyTorch</div>
-            <div class="skill-tag">TensorFlow</div>
-            <div class="skill-tag">LangChain</div>
-            <div class="skill-tag">Scikit-learn</div>
-            <div class="skill-tag">AWS</div>
-            
-            <div class="skill-tag">Python</div>
-            <div class="skill-tag">JavaScript</div>
-            <div class="skill-tag">SQL</div>
-            <div class="skill-tag">Java</div>
-            <div class="skill-tag">C</div>
-        </div>
-    </section>
-
-    <section id="certifications">
-        <h2>Education & Certifications</h2>
-        
-        <div class="timeline-item">
-            <h3>B.Tech (IT) | GMR Institute of Technology</h3>
-            <p>2021-2025 | CGPA: 8.2</p>
-        </div>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>IBM AI Developer Professional Certificate</h3>
-                <p>Coursera | Apr 2026</p>
-                <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/public/ibm%20ai%20developer.pdf" target="_blank" style="color: var(--accent-color); text-decoration: none;">View Certificate</a>
+        <h2>Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>AI/ML Core</h4>
+                <p>GenAI, LLMs, RAG, Computer Vision, GANs [cite: 36]</p>
             </div>
-            <div class="project-card">
-                <h3>Machine Learning Specialization</h3>
-                <p>University of Washington, Coursera | Apr 2026</p>
-                <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/public/PYTHON%20COURSERA.pdf" target="_blank" style="color: var(--accent-color); text-decoration: none;">View Certificate</a>
+            <div class="skill-category">
+                <h4>Frameworks</h4>
+                <p>PyTorch, TensorFlow, LangChain, Hugging Face, Flask [cite: 36]</p>
             </div>
-            <div class="project-card">
-                <h3>AWS Academy Graduate</h3>
-                <p>Sept 2024</p>
-                <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/public/aws%20cloud%20partitioner%20essentials.pdf" target="_blank" style="color: var(--accent-color); text-decoration: none;">View Certificate</a>
+            <div class="skill-category">
+                <h4>Engineering</h4>
+                <p>Python, AWS, SQL, REST APIs, Git [cite: 37]</p>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>© 2026 Bhupathi Hari Krishna | Based in Srikakulam, India [cite: 1, 2]</p>
+    </footer>
 
     <script src="index.js"></script>
 </body>
