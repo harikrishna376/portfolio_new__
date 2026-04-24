@@ -1,119 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hari Krishna | ML Engineer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hari Krishna Bhupathi — ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- ===== LOADER ===== -->
-<div id="loader">
-  <div class="spinner"></div>
-</div>
+  <!-- ░░ LOADER ░░ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar"></div>
+      <span class="loader-text">HKB</span>
+    </div>
+  </div>
 
-<!-- ===== NAVBAR ===== -->
-<header class="header">
-  <nav class="nav container">
-    <h2 class="logo">HK.</h2>
+  <!-- ░░ CURSOR ░░ -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-    <ul class="nav-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <button id="theme-toggle">☀️</button>
+  <!-- ░░ NAV ░░ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">HK<span>B</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">◐</span>
+        </button>
+        <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/final_resume.pdf" target="_blank" class="btn-resume">Resume ↗</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#about" class="nav-link-m">About</a>
+      <a href="#projects" class="nav-link-m">Projects</a>
+      <a href="#research" class="nav-link-m">Research</a>
+      <a href="#certifications" class="nav-link-m">Certs</a>
+      <a href="#contact" class="nav-link-m">Contact</a>
+      <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/final_resume.pdf" target="_blank" class="nav-link-m accent">↗ Resume</a>
+    </div>
   </nav>
-</header>
 
-<!-- ===== HERO ===== -->
-<section id="home" class="hero container">
-  <div class="hero-content">
-    <h1>Building Intelligent Systems with <span>AI</span></h1>
-    <h2 id="typing"></h2>
+  <!-- ░░ HERO ░░ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-inner">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name reveal">
+        Hari Krishna<br /><em>Bhupathi</em>
+      </h1>
+      <div class="hero-role reveal">
+        <span class="role-prefix">—</span>
+        <span id="typing-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-summary reveal">
+        Building intelligent systems at the intersection of<br />
+        <strong>Generative AI, LLMs, and Computer Vision</strong> — from research to production.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn-primary">View Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="94">0</span><span>%</span>
+          <p>Model Accuracy</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="200">0</span><span>+</span>
+          <p>Articles / Session</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="35">0</span><span>%</span>
+          <p>Visual Realism ↑</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="80">0</span><span>%</span>
+          <p>Effort Reduced</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <p>
-      I design and deploy real-world ML systems using LLMs, GANs, and NLP pipelines.
-    </p>
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label reveal">01 / About</div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <h2 class="section-title">Crafting Intelligence,<br /><em>One Model at a Time</em></h2>
+          <p class="about-bio">
+            I'm a Machine Learning Engineer based in Srikakulam, India, specializing in building real-world AI systems that go beyond benchmarks. My work spans <strong>Generative AI pipelines, LLM integrations, RAG architectures, NLP systems,</strong> and <strong>GAN-based Computer Vision</strong>.
+          </p>
+          <p class="about-bio">
+            I hold a B.Tech in Information Technology from GMR Institute of Technology (CGPA: 8.2) and have hands-on industry experience as a Technical Training Intern at TopNotch Softsol, Hyderabad. My research on GAN-based virtual try-on is published in <strong>IJARSCT (Impact Factor: 7.53)</strong>.
+          </p>
+          <div class="about-links">
+            <a href="https://github.com/harikrishna376" target="_blank" class="social-chip">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/hari-krishna-bhupathi-a29a88273/" target="_blank" class="social-chip">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <div class="skills-heading">Core Stack</div>
+          <div class="skills-grid" id="skills-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="hero-actions">
-      <a href="#projects" class="btn primary">View Work</a>
-      <a href="#contact" class="btn ghost">Contact</a>
+  <!-- ░░ PROJECTS ░░ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label reveal">02 / Projects</div>
+      <h2 class="section-title reveal">Things I've <em>Built</em></h2>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+        <button class="filter-btn" data-filter="vision">Computer Vision</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+        <button class="filter-btn" data-filter="tool">Tools</button>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ░░ RESEARCH ░░ -->
+  <section id="research">
+    <div class="container">
+      <div class="section-label reveal">03 / Research</div>
+      <h2 class="section-title reveal">Published <em>Research</em></h2>
+      <div class="research-grid">
+        <div class="research-card reveal" id="main-pub">
+          <div class="research-card-top">
+            <span class="research-badge">IJARSCT Publication</span>
+            <span class="research-impact">Impact Factor: 7.53</span>
+          </div>
+          <h3 class="research-title">GAN-Based Virtual Try-On System with Multi-Angle Rendering</h3>
+          <p class="research-abstract">
+            Developed a novel Generative Adversarial Network architecture enabling real-time virtual clothing try-on with multi-angle view synthesis. The system combines body pose estimation, cloth warping, and appearance blending to achieve photorealistic results — improving visual realism by <strong>35%</strong> over prior methods.
+          </p>
+          <div class="research-tags">
+            <span>GANs</span><span>PyTorch</span><span>Computer Vision</span><span>OpenCV</span><span>Deep Learning</span>
+          </div>
+          <div class="research-actions">
+            <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/public/MAIN_PROJECT_PUBLICATION.pdf" target="_blank" class="btn-primary sm">View Publication ↗</a>
+            <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/public/MAIN_PROJECT_PAPER.pdf" target="_blank" class="btn-ghost sm">Mirror Paper ↗</a>
+          </div>
+        </div>
+        <div class="research-side reveal">
+          <div class="research-highlight">
+            <div class="rh-icon">📄</div>
+            <div>
+              <div class="rh-label">Journal</div>
+              <div class="rh-val">International Journal of Advanced Research in Science, Communication and Technology</div>
+            </div>
+          </div>
+          <div class="research-highlight">
+            <div class="rh-icon">⭐</div>
+            <div>
+              <div class="rh-label">Impact Factor</div>
+              <div class="rh-val">7.53</div>
+            </div>
+          </div>
+          <div class="research-highlight">
+            <div class="rh-icon">🔬</div>
+            <div>
+              <div class="rh-label">Domain</div>
+              <div class="rh-val">Generative AI · Computer Vision · GANs</div>
+            </div>
+          </div>
+          <div class="research-highlight">
+            <div class="rh-icon">📈</div>
+            <div>
+              <div class="rh-label">Key Result</div>
+              <div class="rh-val">35% improvement in visual realism over baseline</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CERTIFICATIONS ░░ -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-label reveal">04 / Certifications</div>
+      <h2 class="section-title reveal">Verified <em>Credentials</em></h2>
+      <div class="certs-grid" id="certs-grid"></div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label reveal">05 / Contact</div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <h2 class="section-title">Let's Build<br /><em>Something</em></h2>
+          <p class="contact-sub">I'm open to full-time ML Engineer roles, research collaborations, and interesting AI projects. Drop a message below.</p>
+          <div class="contact-social">
+            <a href="https://github.com/harikrishna376" target="_blank" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/hari-krishna-bhupathi-a29a88273/" target="_blank" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:harikrishnabhupathi376@gmail.com" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="off" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..."></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn-primary full">Send Message ↗</button>
+            <div class="form-success" id="form-success">Message sent! I'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name">Hari Krishna Bhupathi</span>
+        <span class="footer-copy">© 2026 — Built with precision</span>
+        <div class="footer-links">
+          <a href="https://github.com/harikrishna376" target="_blank">GH</a>
+          <a href="https://www.linkedin.com/in/hari-krishna-bhupathi-a29a88273/" target="_blank">LI</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ░░ PROJECT MODAL ░░ -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-content" id="modal-content"></div>
     </div>
   </div>
-</section>
 
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section container reveal">
-  <h2>About Me</h2>
-
-  <div class="about-grid">
-    <p>
-      Machine Learning Engineer with expertise in Generative AI, RAG pipelines,
-      and real-time ML deployment. Published research in GAN-based virtual try-on.
-    </p>
-
-    <div class="skills-grid">
-      <div class="skill-card">Python</div>
-      <div class="skill-card">PyTorch</div>
-      <div class="skill-card">LLMs</div>
-      <div class="skill-card">Computer Vision</div>
-      <div class="skill-card">NLP</div>
-      <div class="skill-card">AWS</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="section container reveal">
-  <h2>Selected Projects</h2>
-  <div id="projectGrid" class="grid"></div>
-</section>
-
-<!-- ===== RESEARCH ===== -->
-<section id="research" class="section container reveal">
-  <h2>Research</h2>
-
-  <div class="research-card">
-    <h3>GAN-Based Virtual Try-On</h3>
-    <p>
-      Published research improving realism in virtual try-on systems using GANs.
-    </p>
-    <span class="badge">Published</span>
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section container reveal">
-  <h2>Contact</h2>
-
-  <form id="form">
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message" required></textarea>
-    <button class="btn primary">Send</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2026 Hari Krishna</p>
-</footer>
-
-<!-- MODAL -->
-<div id="modal" class="modal">
-  <div class="modal-box">
-    <span id="close">&times;</span>
-    <h2 id="mTitle"></h2>
-    <p id="mDesc"></p>
-    <a id="mLink" target="_blank">Open Project</a>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
