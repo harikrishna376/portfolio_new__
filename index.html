@@ -1,100 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhupathi Hari Krishna | AI & ML Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hari Krishna | ML Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav>
-        <div class="nav-container">
-            <h1>BHK<span>.</span>AI</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- ===== LOADER ===== -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
 
-    <section id="home">
-        <div class="hero">
-            <span class="badge">Machine Learning Engineer</span>
-            <h1>Bhupathi Hari Krishna</h1>
-            <p class="subtitle">Specializing in <strong>Generative AI</strong>, <strong>LLMs</strong>, and <strong>RAG Pipelines</strong>[cite: 6]. Building end-to-end ML systems with measurable business impact[cite: 7].</p>
-            <div class="cta-group">
-                <a href="https://www.linkedin.com/in/hari-krishna-bhupathi-a29a88273/" class="btn-primary" target="_blank">LinkedIn</a>
-                <a href="https://github.com/harikrishna376" class="btn-secondary" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </section>
+<!-- ===== NAVBAR ===== -->
+<header class="header">
+  <nav class="nav container">
+    <h2 class="logo">HK.</h2>
 
-    <section id="projects">
-        <h2>Engineering Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="card-header">
-                    <h3>Market Mood AI</h3>
-                    <span class="tag">NLP</span>
-                </div>
-                <p>Real-time sentiment system processing 200+ financial articles per session[cite: 19]. Automated pipelines reducing manual effort by 80%[cite: 20].</p>
-                <div class="tech-stack">Python, BeautifulSoup, TextBlob [cite: 17]</div>
-                <a href="https://ai-market-sentinel-v2-hv58xxeqde9lngqjwxs9ed.streamlit.app/" class="btn-link" target="_blank">View Live Demo →</a>
-            </div>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-            <div class="project-card">
-                <div class="card-header">
-                    <h3>Smart Mirror Engine</h3>
-                    <span class="tag">CV</span>
-                </div>
-                <p>GAN-based virtual try-on system with multi-angle rendering[cite: 25]. Improved visual realism by 35% via optimized image pipelines[cite: 25].</p>
-                <div class="tech-stack">PyTorch, GANs, OpenCV [cite: 23]</div>
-                <a href="https://ai-virtual-tryon-engine.streamlit.app/" class="btn-link" target="_blank">View Live Demo →</a>
-            </div>
-        </div>
-    </section>
+    <button id="theme-toggle">☀️</button>
+  </nav>
+</header>
 
-    <section id="research">
-        <div class="research-container">
-            <div class="research-header">
-                <h2>Research & Publications</h2>
-                <span class="impact-factor">Impact Factor: 7.53</span>
-            </div>
-            <div class="research-card">
-                <h3>Virtual Try-On System using Generative Adversarial Networks</h3>
-                <p class="journal">Published in International Journal of Advanced Research in Science, Communication and Technology (IJARSCT).</p>
-                <p class="abstract">Developed a novel architecture for real-time garment transfer and realistic multi-angle visualization using deep generative models[cite: 25, 26].</p>
-                <a href="https://github.com/harikrishna376/portfolio_new__/blob/main/public/MAIN_PROJECT_PUBLICATION.pdf" class="btn-primary" target="_blank">Read Research Paper</a>
-            </div>
-        </div>
-    </section>
+<!-- ===== HERO ===== -->
+<section id="home" class="hero container">
+  <div class="hero-content">
+    <h1>Building Intelligent Systems with <span>AI</span></h1>
+    <h2 id="typing"></h2>
 
-    <section id="skills">
-        <h2>Technical Arsenal</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>AI/ML Core</h4>
-                <p>GenAI, LLMs, RAG, Computer Vision, GANs [cite: 36]</p>
-            </div>
-            <div class="skill-category">
-                <h4>Frameworks</h4>
-                <p>PyTorch, TensorFlow, LangChain, Hugging Face, Flask [cite: 36]</p>
-            </div>
-            <div class="skill-category">
-                <h4>Engineering</h4>
-                <p>Python, AWS, SQL, REST APIs, Git [cite: 37]</p>
-            </div>
-        </div>
-    </section>
+    <p>
+      I design and deploy real-world ML systems using LLMs, GANs, and NLP pipelines.
+    </p>
 
-    <footer>
-        <p>© 2026 Bhupathi Hari Krishna | Based in Srikakulam, India [cite: 1, 2]</p>
-    </footer>
+    <div class="hero-actions">
+      <a href="#projects" class="btn primary">View Work</a>
+      <a href="#contact" class="btn ghost">Contact</a>
+    </div>
+  </div>
+</section>
 
-    <script src="index.js"></script>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section container reveal">
+  <h2>About Me</h2>
+
+  <div class="about-grid">
+    <p>
+      Machine Learning Engineer with expertise in Generative AI, RAG pipelines,
+      and real-time ML deployment. Published research in GAN-based virtual try-on.
+    </p>
+
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">PyTorch</div>
+      <div class="skill-card">LLMs</div>
+      <div class="skill-card">Computer Vision</div>
+      <div class="skill-card">NLP</div>
+      <div class="skill-card">AWS</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section container reveal">
+  <h2>Selected Projects</h2>
+  <div id="projectGrid" class="grid"></div>
+</section>
+
+<!-- ===== RESEARCH ===== -->
+<section id="research" class="section container reveal">
+  <h2>Research</h2>
+
+  <div class="research-card">
+    <h3>GAN-Based Virtual Try-On</h3>
+    <p>
+      Published research improving realism in virtual try-on systems using GANs.
+    </p>
+    <span class="badge">Published</span>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section container reveal">
+  <h2>Contact</h2>
+
+  <form id="form">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button class="btn primary">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Hari Krishna</p>
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <span id="close">&times;</span>
+    <h2 id="mTitle"></h2>
+    <p id="mDesc"></p>
+    <a id="mLink" target="_blank">Open Project</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
