@@ -1,53 +1,70 @@
-// 1. Smooth Scroll Implementation
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 80,
-                behavior: 'smooth'
-            });
-        }
-    });
+// LOADER
+window.onload = () => {
+  document.getElementById("loader").style.display = "none";
+};
+
+// TYPING
+const words = ["ML Engineer", "AI Builder", "Researcher"];
+let i=0,j=0,cur="",del=false;
+
+function type(){
+  cur=words[i];
+  document.getElementById("typing").textContent =
+    del ? cur.substring(0,j--) : cur.substring(0,j++);
+
+  if(!del && j===cur.length) del=true;
+  else if(del && j===0){ del=false; i=(i+1)%words.length; }
+
+  setTimeout(type,80);
+}
+type();
+
+// PROJECT DATA
+const data = [
+  {
+    title:"Market Mood AI",
+    desc:"Real-time financial sentiment AI",
+    link:"https://ai-market-sentinel-v2-hv58xxeqde9lngqjwxs9ed.streamlit.app/"
+  },
+  {
+    title:"Virtual Try-On",
+    desc:"GAN-based clothing system",
+    link:"https://ai-virtual-tryon-engine.streamlit.app/"
+  }
+];
+
+const grid = document.getElementById("projectGrid");
+
+data.forEach(p=>{
+  let card=document.createElement("div");
+  card.className="card";
+  card.innerHTML=`<h3>${p.title}</h3><p>${p.desc}</p>`;
+  card.onclick=()=>openModal(p);
+  grid.appendChild(card);
 });
 
-// 2. Active Link Highlighting on Scroll
-window.addEventListener('scroll', () => {
-    let current = "";
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute('id');
-        }
-    });
+// MODAL
+function openModal(p){
+  document.getElementById("modal").style.display="block";
+  mTitle.textContent=p.title;
+  mDesc.textContent=p.desc;
+  mLink.href=p.link;
+}
+close.onclick=()=>modal.style.display="none";
 
-    document.querySelectorAll('nav a').forEach(a => {
-        a.classList.remove('active');
-        if (a.getAttribute('href').includes(current)) {
-            a.classList.add('active');
-            a.style.color = "#38bdf8"; // Highlight active section in Blue
-        } else {
-            a.style.color = "#9ca3af"; // Reset others to dim
-        }
-    });
+// SCROLL REVEAL
+const reveals=document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",()=>{
+  reveals.forEach(el=>{
+    let top=el.getBoundingClientRect().top;
+    if(top < window.innerHeight-100){
+      el.classList.add("active");
+    }
+  });
 });
 
-// 3. Simple Entrance Animation
-const observerOptions = { threshold: 0.1 };
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.project-card, .research-card').forEach(el => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(20px)";
-    el.style.transition = "all 0.6s ease-out";
-    observer.observe(el);
-});
+// THEME
+theme-toggle.onclick=()=>{
+  document.body.classList.toggle("light");
+};
